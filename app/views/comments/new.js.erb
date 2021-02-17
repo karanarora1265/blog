@@ -1,0 +1,1 @@
+document.getElementById("<%= 'comment-' + @parent_comment.id.to_s %>").innerHTML += "<%= escape_javascript render(partial: 'comments/new_comment', locals: {parent_object: @parent_comment})%>"

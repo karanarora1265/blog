@@ -1,0 +1,6 @@
+<%= form_for [parent_object,@comment], remote: true do |f| %>
+  <%= f.label :body %>:
+  <%= f.text_field :body %><br />
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,6 @@
+<div id="<%= 'comment-' + comment.id.to_s %>">
+	<div><%= comment.body %> </div>
+	<div>Commented by <%= comment.user_email %></div>
+	<%= link_to 'Reply', new_comment_comment_path(comment), remote: true %>
+</div>
+<br>
